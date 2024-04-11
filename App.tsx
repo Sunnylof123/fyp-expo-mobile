@@ -1,11 +1,14 @@
 import { StyleSheet, Text, View } from "react-native"
 import WebView from "react-native-webview"
-const url = "http://" + "your react app doamin "
+const url = "http://" + "ovpn.sunnylof123.xyz"
 export default function App() {
   return (
     <View style={styles.container}>
       <WebView
-        style={{ width: "100%", height: "100%" }}
+        style={{
+          width: "100%",
+          height: "100%",
+        }}
         source={{ uri: url }}
       />
     </View>
@@ -15,5 +18,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingTop: 45,
+    paddingBottom: 30,
+    backgroundColor: "black"
   },
 })
